@@ -1,0 +1,6 @@
+@include('layouts.header')
+	@yield('home')
+	@yield('login')
+	@yield('register')
+	@yield('user')
+@include('layouts.footer')

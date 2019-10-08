@@ -1,0 +1,20 @@
+#!/usr/bin/env php
+<?php
+
+require 'libs/AutoLoad.php';
+
+use Symfony\Component\Console\Application;
+
+
+$application = new Application();
+
+# add our commands
+$application->add(new ControllerCommand());
+$application->add(new ModelCommand());
+$application->add(new ViewCacheCommand());
+$application->add(new SessionCacheCommand());
+$application->add(new MigrationCommand());
+$application->add(new RunMigrateCommand());
+$application->add(new DropMigrateCommand());
+
+$application->run();

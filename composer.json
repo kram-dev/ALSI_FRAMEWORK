@@ -1,0 +1,35 @@
+{	
+	"authors": [
+        {
+	        "name": "Mark Angelo Sila",
+	        "email": "markangelo.sila@gmail.com",
+	        "homepage": "https://markangelo-sila.com",
+	        "role": "Developer"
+        }
+    ],
+	"require": {
+		"php" : "^5.5 || ^7.0",
+		"symfony/console": "^4.3",
+		"pecee/simple-router": "4.2.0.6",
+		"filp/whoops": "^2.3",
+		"jenssegers/blade": "^1.2",
+		"illuminate/console": "^5.8",
+		"doctrine/dbal": "^2.9",
+		"illuminate/database": "^5.8",
+		"illuminate/pagination": "^5.8",
+		"illuminate/container": "^5.8"
+	},
+	"autoload": {
+		"psr-4": {
+                "App\\Model\\": "app/Model/",
+                "":"app/Controller"
+        },
+	    "classmap": [
+	    		"libs/Composer/Commands",
+	    		"migration"
+	    ]
+	},
+	"require-dev": {
+		"symfony/dotenv": "^4.3"
+	}
+}
